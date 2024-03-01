@@ -1,0 +1,60 @@
+{
+  "name": "foodie-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node dist/bin/www",
+    "dev": "nodemon --exec ts-node ./bin/www",
+    "build": "npm install && tsc"
+  },
+  "type": "module",
+  "main": "dist./index.js",
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "lib": "dist"
+  },
+  "dependencies": {
+    "@types/express-session": "^1.17.7",
+    "@types/mercadopago": "^1.5.8",
+    "@types/nodemailer": "^6.4.14",
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.3.1",
+    "ejs": "~2.6.1",
+    "escpos": "^3.0.0-alpha.6",
+    "escpos-usb": "^3.0.0-alpha.4",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "http-errors": "~1.6.3",
+    "joi": "^17.10.1",
+    "joi-oid": "^1.1.2",
+    "jsonwebtoken": "^9.0.2",
+    "mercadopago": "^1.5.17",
+    "mongoose": "^7.5.2",
+    "morgan": "~1.9.1",
+    "nodemailer": "^6.9.7",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-oauth": "^1.0.0",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.4",
+    "@types/cookie-parser": "^1.4.4",
+    "@types/cors": "^2.8.14",
+    "@types/debug": "^4.1.8",
+    "@types/escpos": "^2.5.5",
+    "@types/morgan": "^1.9.5",
+    "@types/passport": "^1.0.12",
+    "@types/passport-jwt": "^3.0.9",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
